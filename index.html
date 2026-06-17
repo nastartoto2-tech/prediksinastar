@@ -1523,35 +1523,6 @@ document.addEventListener('keydown', function(e){
 
 });
 
-// Deteksi DevTools terbuka
-setInterval(function(){
-
-    const widthThreshold =
-        window.outerWidth - window.innerWidth > 160;
-
-    const heightThreshold =
-        window.outerHeight - window.innerHeight > 160;
-
-    if(widthThreshold || heightThreshold){
-
-        document.body.innerHTML = `
-            <div style="
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                height:100vh;
-                background:#000;
-                color:#ffd700;
-                font-size:28px;
-                font-weight:bold;
-                font-family:Arial;">
-                ACCESS DENIED
-            </div>
-        `;
-
-    }
-
-}, 1000);
 </script>
     </script>
     <!-- Begin of Chaport Live Chat code -->
