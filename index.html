@@ -1078,8 +1078,6 @@ speed:1000
 </div>
 
 
-
-
 <!-- KALKULATOR-->
               <div class="calculator">
                <h2>
@@ -1123,7 +1121,56 @@ speed:1000
 
 <!-- HASIL PERTANDINGAN DISINI -->
 
-     <div class="card my-2 link-btn-rounded" style="border:0;background:#DECCCC2B;">
+<style>
+/* ACCORDION WORLD CUP MOBILE */
+.wc-card{
+    border:none !important;
+    background:rgba(255,255,255,0.08) !important;
+    backdrop-filter:blur(8px);
+    border-radius:15px !important;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+
+.wc-header{
+    background:linear-gradient(
+        135deg,
+        #5a1300 0%,
+        #2a0000 60%,
+        #140000 100%
+    ) !important;
+}
+
+.wc-btn{
+    color:#fff !important;
+    text-align:center !important;
+    font-weight:700 !important;
+    font-size:16px;
+    letter-spacing:.5px;
+    padding:16px 12px !important;
+    display:block;
+    width:100%;
+    text-decoration:none !important;
+    white-space:normal;
+    line-height:1.4;
+}
+
+.wc-btn:focus,
+.wc-btn:hover{
+    color:#FFD700 !important;
+    text-decoration:none !important;
+}
+
+@media(max-width:768px){
+
+    .wc-btn{
+        font-size:14px;
+        padding:14px 10px !important;
+    }
+
+}
+</style>
+<div class="card my-2 link-btn-rounded" style="border:0;background:#DECCCC2B;">
     <div class="py-2 link-btn-rounded border-0"
          id="accordion_1574_header_2"
          style="background:#DECCCC2B;">
@@ -1270,7 +1317,7 @@ speed:1000
             </div>
             <div class="result-box">
                 <span class="team-home"> ENGLAND</span>
-                <span class="result-score">0 - 0</span>
+                <span class="result-score">4 - 2</span>
                 <span class="team-away">CROATIA 🇭🇷</span>
             </div>
 
