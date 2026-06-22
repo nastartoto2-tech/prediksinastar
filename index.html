@@ -1268,6 +1268,24 @@ speed:1000
 </div>
 
      <footer class="link-footer" id="footer">
+        <style>
+.bottom-gif{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.bottom-gif img{
+    width: 100%;
+    display: block;
+}
+</style>
+<div class="bottom-gif">
+    <img src="https://i.postimg.cc/mrYdMD9r/gifkz.gif" alt="GIF">
+</div><br>
       <div class="link-footer-branding" id="branding">
        <span style="color:#ffffff;">
         Partner Resmi Piala Dunia FIFA 2026
@@ -1276,6 +1294,7 @@ speed:1000
         <br/>
         All Rights Reserved
        </span>
+    
       </div>
      </footer>
     </div>
@@ -1478,75 +1497,89 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
 
 
      <style>
-     .float-btn{
-         position:fixed;
-         left:20px;
-         z-index:999999;
-         padding:12px 20px;
-         border-radius:50px;
-         font-weight:bold;
-         text-decoration:none;
-         font-family:Arial,sans-serif;
-         color:#000;
-         overflow:hidden;
+.float-btn{
+    position: fixed;
+    left: 20px;
+    z-index: 999999;
+    bottom: 20px;
 
-         background:linear-gradient(135deg,#ffd700,#fff4a3,#ffd700);
+    padding: 12px 20px;
+    border-radius: 50px;
+    font: bold 16px Arial, sans-serif;
+    text-decoration: none !important;
+    color: #ff0000;
 
-         box-shadow:
-             0 0 10px #ffd700,
-             0 0 20px #ffd700,
-             0 0 30px rgba(255,215,0,.8);
+    background: linear-gradient(135deg, #ffd700, #fff4a3, #ffd700);
+    box-shadow:
+        0 0 10px #ffd700,
+        0 0 20px #ffd700,
+        0 0 30px rgba(255,215,0,.8);
 
-         animation:
-             pulse 2s infinite,
-             blink 1.2s infinite;
-     }
+    overflow: hidden;
+    animation: pulse 2s infinite, blink 1.2s infinite;
+}
 
-     .float-btn::before{
-         content:&#39;&#39;;
-         position:absolute;
-         top:0;
-         left:-100%;
-         width:60%;
-         height:100%;
-         background:linear-gradient(
-             90deg,
-             transparent,
-             rgba(255,255,255,.9),
-             transparent
-         );
-         transform:skewX(-25deg);
-         animation:shine 2.5s infinite;
-     }
+.float-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
 
-     #nastartoto-btn{
-         bottom:80px; /* tombol atas */
-     }
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.9),
+        transparent
+    );
 
-     #prediksi-btn{
-         bottom:20px; /* tombol bawah */
-     }
+    transform: skewX(-25deg);
+    animation: shine 3s infinite;
+}
 
-     @keyframes pulse{
-         0%,100%{transform:scale(1);}
-         50%{transform:scale(1.08);}
-     }
+#nastartoto-btn{
+    bottom: 80px;
+}
 
-     @keyframes blink{
-         0%,100%{opacity:1;}
-         50%{opacity:.8;}
-     }
+#prediksi-btn{
+    bottom: 20px;
+}
 
-     @keyframes shine{
-         0%{left:-100%;}
-         100%{left:200%;}
-     }
-     </style>
+@keyframes pulse{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.08);
+    }
+}
 
+@keyframes blink{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .85;
+    }
+}
 
-     <a class='float-btn' href='https://nastartoto.cuanteruss.site/' id='prediksi-btn' target='_blank'>
-        🎰 RTP GACOR !!!
-     </a>
+@keyframes shine{
+    from{
+        left: -150%;
+    }
+    to{
+        left: 150%;
+    }
+}
+</style>
+
+<a class="float-btn"
+   href="https://nastartoto.cuanteruss.site/"
+   id="prediksi-btn"
+   target="_blank">
+   🎰 RTP GACOR !!!
+</a>
 
  </body>
 </html>
